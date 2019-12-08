@@ -56,12 +56,12 @@ softmax = e^Ln / abs(e^L)
 # Now that we have predictions we must see how well they compare to the correct answer.
 # The correct answer will be encoded in a ONE-HOT encoding. 
 # A loss function is fed both the one-hot correct answer and the outputed predictions, for classification problems, CROSS ENTROPY LOSS
-# is most commonly used.
+# is most commonly used for classification.
 # These loss functions compute the gradient and attempt to find a minimum via gradient descent. 
 # Additionally, a function can have many minimum. Or your gradient descent can land you into a saddlepoint.
 # For these, we batch training datasets together to add momentum. 
 # Also keras/tensorflow exposes optimizers to add some momentum to the gradient descent.
-# IE: Adam, Gradient Descent Optimizer, Root Mean Squared optimizer
+# IE: Adam, Gradient Descent Optimizer, Root Mean Squared optimizer, SGD (stochastic gradient descent)
 
 
 
